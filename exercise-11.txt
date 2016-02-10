@@ -1,0 +1,5 @@
+Exercise 11
+
+List all of the cities within the countries of Canada, Austria, Isle of Man, Ireland and Japan.
+
+1. select city from Address where country = 'Canada' or  where country = 'Austria' or where country = 'Isle of Man' or where country = 'Ireland' or where country= 'Japan';
