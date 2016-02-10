@@ -3,3 +3,4 @@ Exercise 7
 List all possible domain name values for ElectronicMail (email@domain.name)
 
 1. select right(content, length(content)-INSTR(content, '@')) from ElectronicMail group by content;
+                **removes everything after the first occurance of '@'**
