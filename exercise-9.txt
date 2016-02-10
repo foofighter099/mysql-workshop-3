@@ -1,0 +1,5 @@
+Exercise 9
+
+List all Account emails with AddressBook containing Phone numbers with a country code
+
+1. select email from Account join AddressBook on (Account.id = AddressBook.accountId) join Entry on (AddressBook.Id = Entry.addressBookId) join Phone on (Entry.id = Phone.entryId) where content like '1-%' group by accountId;
