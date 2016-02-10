@@ -1,0 +1,5 @@
+Exercise 12
+
+List 100 phone numbers in separated parts: country code, area code and line number
+
+1. select substring(content, 0, 1) as "country code", substring(content, 1, 5) as "area code", substring(content,6,9) as 'line' from Phone limit 100;
