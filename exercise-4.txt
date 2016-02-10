@@ -1,0 +1,10 @@
+Exercise 4
+
+List all of the first names for AddressBook.name="Pharetra Ut Limited"
+The first and last letters should be capitalized
+
+1. select * from AddressBook where name = 'Pharetra Ut Limited';
+2. select concat(substring(firstName, 1, length(firstName)-1),upper(substring(firstName, -1))) as `concatenated` from Entry where addressBookId = '10';
+
+..later realized I can do: select concat(substring(firstName, 1, length(firstName)-1),upper(substring(firstName, -1))) as `concatenated` from Entry join AddressBook on (Entry.addressBookId=AddressBook.id) where AddressBook.name="Pharetra Ut Limited";
+'join' would allow me to use just one query. not the way I first thought of it, but pretty cool!
