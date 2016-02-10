@@ -1,0 +1,7 @@
+Exercise 10
+
+List all of the person names born between 8PM and 9PM but not in the month of February
+
+1. select firstName, lastName, right(birthday, length(birthday)-INSTR(birthday, ' ')) from Entry where right(birthday, length(birthday)-INSTR(birthday, ' ')) > '20:00:00' and right(birthday, length(birthday)-INSTR(birthday, ' ')) < '21:00:00' and birthday not like '%-02-%';
+
+--> 249 rows (not very pretty, but gets the job done! used the same right(str, lngth) and INSTR functionality as in exercise 7 <--
