@@ -1,0 +1,5 @@
+Exercise 6
+
+List all of the phone numbers for Jenkins, Charlotte
+
+1. select content from Phone join Entry on (Phone.entryId=Entry.id) where Entry.firstName="Charlotte" and Entry.lastName="Jenkins"; --> 2 phone numbers
