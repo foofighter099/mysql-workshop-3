@@ -1,0 +1,5 @@
+Exercise 5
+
+List all of the emails associated to AddressBook.id = 100
+
+1. select content from ElectronicMail join Entry on (ElectronicMail.entryId=Entry.id) join AddressBook on (Entry.addressBookId=AddressBook.id) where AddressBook.id="100"; --> 14 rows 
