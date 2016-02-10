@@ -1,0 +1,6 @@
+Exercise 3
+
+List all of the countries with respective occurence totals in DESC order
+Country names should all appear lowercase
+
+1. SELECT lower(country),COUNT(*) as count FROM Address GROUP BY country ORDER BY count DESC; --> highest: mozambique(18), lowest: niger(2)
